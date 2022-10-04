@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.25rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+img {
+    max-width:100%
+}
+
+ul {
+    list-style-type: none;
+}
+h1,
+p {
+    color: var(--gray);
+}
+
+.heading h1 {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.heading h1 span {
+    font-weight:700;
+    color: #111;
+}
+
+.heading p {
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 1.25rem;
+}
+
+.form-control {
+    width: 300px;
+    margin: auto
+}
+
+input {
+    width: 100%;
+    border-radius: 2rem;
+    padding: .5rem ;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    outline: none;
+    margin-bottom: .6rem;
+}
+input::placeholder {
+    color: var(--blue);
+}
+.btn {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2rem;
+    padding:.5rem;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--blue);
+    transition: .3s;
+}
+.btn:hover {
+    background-color: var(--pale-blue);
+}
+
+.showcase {
+    padding: 3rem 1.25rem 5rem;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer ul li{
+    margin: 0 1.25rem;
+}
+
+footer ul li a{
+    cursor: pointer;
+    color: var(--blue);
+    border: 1px solid #888888;
+    background: #f4f4f4;
+    padding:.5rem;
+    border-radius: 2rem;
+    transition: .3s;
+}
+
+footer p {
+    padding-top: 1.25rem;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error-text {
+    color: red;
+    font-size:10px;
+    margin-right: 10rem;
+    font-style: italic;
+}
+.success {
+    border: 2px solid green;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 768px) {
+    .headomg h1 {
+        font-size:2.25;
+    }
+    .heading .form-control {
+        width: auto;
+    }
+    .heading .form-control input, 
+    .heading .form-control button {
+        width: auto;
+        padding: .75rem 1.25rem;
+    } 
+    .heading .form-control button {
+        width: 9.3rem;
+    }
+    .showcase img {
+        width: 600px;
+    }
+    .error-text {
+        color: red;
+        font-size:10px;
+        margin: 0 auto;
+        font-style: italic;
+    }
+}
